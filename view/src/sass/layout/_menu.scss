@@ -1,0 +1,119 @@
+// * ===============================================
+// * NAV MOVIL
+// * ===============================================
+.movil{
+  background: $bgDark;
+  @include desktop{
+    display: none;
+  }
+  .movil__topNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    i{
+      color: $whiteL;
+      font-size: 35px;
+    }
+    .movil__logo{
+      display: flex;
+      align-items: center;
+      img{
+        width: 200px;
+        margin-left: 20px;
+      }
+    }
+  }
+  .movil__categorias{
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    a{
+      display: block;
+      text-decoration: none;
+      color: $whiteL;
+      border-bottom: 1px solid $mainBlue;
+      margin-top: 10px;
+      font-family: $title;
+      &:nth-child(6){
+        border-bottom: none;
+        padding: 2px;
+      }
+    }
+    transition: .03s ease all;
+    body.dark &{
+      background: lighten($bgDark, 5%);
+    }
+    .movil__btn{
+      background: $mainBlue;
+      padding: 15px;
+      width: 170px;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+
+    }
+  }
+}
+
+// * ===============================================
+// * MENU ESCRITORIO
+// * ===============================================
+.escritorio{
+  display: none;
+  @include desktop{
+    display: block;
+    background: $bgDark;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .escritorio__navegacion{
+      width: 1150px;
+      margin: auto;
+      display: flex;
+      padding: 10px;
+      justify-content: space-between;
+      align-items: center;
+      body.dark &{
+        background: lighten($bgDark, 5%);
+        border-radius: 5px;
+      }
+      .escritorio_logo{
+        width: 200px;
+      }
+      .escritorio__categorias{
+        display: flex;            ;
+        width: 950px;
+        justify-content: space-between;
+        align-items: center;
+        a{
+          text-decoration: none;
+          font-family: $title;
+          color: $whiteL;
+          &:hover{
+            color: $lemon;
+          }
+        }
+        i{
+          font-size: 30px;
+          color: $whiteL;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+        .escritorio__btn{
+          background: $mainBlue;
+          padding: 5px;
+          width: 170px;
+          text-align: center;
+          border-radius: 5px;
+          font-size: 20px;
+          font-weight: bold;
+
+        }
+      }
+    }
+  }
+
+}

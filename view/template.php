@@ -8,7 +8,7 @@
   <!--===============================================
   Lib CSS
   =================================================-->
-  <link rel="stylesheet" href="view/css/main.css">
+  <link rel="stylesheet" href="view/src/css/main.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
   <!-- Boostrap -->
@@ -40,7 +40,7 @@
       //* ===============================================
       //* Mobile and PC Menu
       //* ===============================================
-      /* include_once 'view/components/menu.php'; */
+      include_once 'view/components/menu.php';
 
       //* ===============================================
       //* White List URL
@@ -69,7 +69,7 @@
 
   </div>
 
-  <!-- <script src="view/js/main.js"></script> -->
+  <script src="view/src/js/main.js"></script>
 
 </body>
 
