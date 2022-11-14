@@ -1,0 +1,200 @@
+.inicio{
+
+  padding: 20px;
+  .inicio__carrousel{
+
+    width: 100%;
+    height: 300px;
+
+    .carrousel__item01{
+      background-image: url('../img/carrusel/1.jpg');
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .carrousel__item02{
+      background-image: url('../img/carrusel/2.jpg');
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .carrousel__item03{
+      background-image: url('../img/carrusel/3.jpg');
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    @include desktop{
+      width: 1150px;
+      margin: auto;
+      height: 400px;
+      .carrousel__item01, .carrousel__item02, .carrousel__item03{
+        height: 400px;
+      }
+    }
+  }
+
+  .inicio__titulo{
+    margin-top: 40px;
+  }
+  p{
+    text-align: center;
+    margin-top: 20px;
+    body.dark &{
+      color: $whiteL;
+     }
+  }
+
+  .inicio__habilities{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    row-gap: 20px;
+    h3{
+      body.dark &{
+        color: $whiteL;
+       }
+    }
+    @include tablet{
+      grid-template-columns:repeat(2, 1fr);
+      column-gap: 20px;
+    }
+    @include desktop{
+      width: 1150px;
+      margin: auto;
+      grid-template-columns:repeat(4, 1fr);
+    }
+    .resposnivo{
+      background: $mainDarkBlue;
+      .abilities__img01{
+        background-image: url('../img/device.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100px;
+      }
+      p{
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .original{
+      background: darken($mainYellow, 20%);
+      .abilities__img02{
+        background-image: url('../img/creativity.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100px;
+      }
+      p{
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .pagos{
+      background: $orange;
+      .abilities__img03{
+        background-image: url('../img/shopping.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100px;
+      }
+      p{
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .disponibilidad{
+      background: lighten($purple, 18%); ;
+      .abilities__img04{
+        background-image: url('../img/clock.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100px;
+      }
+      p{
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+  }
+
+  .destacados{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    row-gap: 20px;
+    font-family: $title;
+    h2{
+      body.dark &{
+        color: $whiteL;
+       }
+    }
+    @include tablet{
+      grid-template-columns:repeat(2, 1fr);
+      column-gap: 20px;
+    }
+    @include desktop{
+      width: 1150px;
+      margin: auto;
+      grid-template-columns:repeat(3, 1fr);
+      justify-content: center;
+    }
+    .destacado__web{
+      background: $mainYellow
+    }
+    .destacado__diseno{
+      background: $mainRed;
+    }
+    .destacados__ti{
+      background: $mainBlue;
+    }
+    a{
+      display: block;
+      text-decoration: none;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: $BlackL;
+      .destacados__img01{
+        background-image: url('../img/internet.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100px;
+        width: 100px;
+      }
+      .destacados__img02{
+        background-image: url('../img/computer.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100px;
+        width: 100px;
+      }
+      .destacados__img03{
+        background-image: url('../img/ti.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100px;
+        width: 100px;
+      }
+    }
+  }
+
+}

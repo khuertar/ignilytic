@@ -1,0 +1,9 @@
+.links{
+  text-decoration: none;
+  font-family: $title;
+  color: $whiteL;
+  display: block;
+  &:hover {
+    color: $lemon;
+  }
+}

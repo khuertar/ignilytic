@@ -1,0 +1,14 @@
+.general__titulo {
+  font-family: $title;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  border-bottom: 3px $lemon solid;
+  width: 100%;
+  body.dark & {
+    color: $whiteL;
+  }
+  @include desktop {
+    width: 1150px;
+  }
+}
