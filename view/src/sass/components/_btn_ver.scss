@@ -1,0 +1,21 @@
+.btn__ver {
+  border-radius: 5px;
+  background-color: $mainRed;
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  color: $BlackL;
+  font-family: $text;
+  transition: all 0.5s ease;
+  margin: auto;
+  font-weight: bold;
+  text-decoration: none;
+  body.dark & {
+    color: $whiteL;
+  }
+  &:hover{
+    background: darken($mainRed, 5%);
+    cursor: pointer;
+    color: $BlackL;
+  }
+}

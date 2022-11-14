@@ -1,0 +1,110 @@
+.servicios{
+  width: 90%;
+  margin: auto;
+
+  @include desktop{
+    width: 1150px;
+  }
+
+  .servicios_in{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    justify-content: center;
+
+    @include tablet{
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+    }
+
+    @include desktop{
+      grid-template-columns: repeat(4, 1fr);
+      width: 1150px;
+    }
+
+    h3{
+      font-family: $title;
+    }
+
+    p {
+      text-align: center;
+      body.dark & {
+        color: $BlackL;
+      }
+    }
+
+    a {
+      color: $BlackL;
+      text-decoration: none;
+    }
+
+    .servicio__Web {
+      background: lighten($mainYellow, 25%);
+
+      .servicio_img01 {
+        background-image: url('../img/internet.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100px;
+      }
+
+    }
+    .servicio__ti {
+      background: lighten($mainDarkBlue, 25%);
+
+      .servicio_img02 {
+        background-image: url('../img/ti.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100px;
+      }
+
+    }
+    .servicio__diseno {
+      background: lighten($purple, 25%);
+
+      .servicio_img03 {
+        background-image: url('../img/computer.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100px;
+      }
+
+    }
+    .servicio__software {
+      background: lighten($lemon, 25%);
+
+      .servicio_img04 {
+        background-image: url('../img/gift.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 100px;
+      }
+
+    }
+
+    .servicio__item{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 5px;
+      justify-content: center;
+    }
+  }
+
+  .servicios__info{
+    margin: auto;
+    margin-top: 20px;
+    @include desktop{
+      width: 1150px;
+    }
+    body.dark & {
+      color: $whiteL;
+    }
+  }
+
+}
