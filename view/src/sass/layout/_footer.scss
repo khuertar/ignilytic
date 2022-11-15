@@ -16,13 +16,18 @@ footer {
     .footer_top {
       .footer_link {     
         .footer_img {
-          height: 50px;
+          height: 70px;
         }
       }
     }
 
     .footer_item {
       text-align: center;
+      a{
+        display: block;
+        margin-top: 10px;
+        font-size: 20px;
+      }      
 
       @include tablet {
         margin: auto;
@@ -50,10 +55,12 @@ footer {
     }
 
     .footer_social {
+      margin-top: 10px;
 
       @include tablet{
         width: 95%;
         margin: auto;
+        margin-top: 10px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
       }
@@ -63,22 +70,24 @@ footer {
         margin: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 10px;
       }
 
       .footer__copy{
         text-align: center;
-        color: $whiteL;
+        color: $whiteL;        
       }
 
       .footer_icons{
         margin: auto;
-        margin-top: 10px;
+        margin-top: 10px;        
         display: flex;
         justify-content: space-around;
         width: 100px;
         @include tablet{
-          margin-top: 0px;
+          margin-top: 0;
         }
+        
       }
     }
   }

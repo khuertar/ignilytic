@@ -1,0 +1,80 @@
+.web{
+
+  width: 90%;
+  margin: auto;
+
+  @include desktop{
+    width: 1150px;
+    margin: auto;
+  }
+
+  .web__paquetes{
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    @include tablet{
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+    }
+    @include desktop{      
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 20px;
+    }
+    .web_card{
+      display: grid;
+      row-gap: 10px;
+      color: $whiteL;
+      h3{
+        font-family: $title;
+      }
+      .web__text{
+        display: grid;
+        row-gap: 5px;
+      }
+      a{
+        text-decoration: none;
+        color: $BlackL;
+      }
+    }
+  }
+  .web__economico{
+    background: $violet;
+  }
+  .web__emprendedor{
+    background: $purple;
+  }
+  .web__micro{
+    background: $mainDarkBlue;
+  }
+  .web__auto{
+    background: $orange;
+  }
+
+  .web__info{
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+    background: $BlackL;
+    border-radius: 5px;
+    @include tablet{
+      width: 300px;
+    }
+    .web__imgInfo{
+      background-image: url('../img/info.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      height: 50px;
+    }
+    .web__btnInfo{
+      display: block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: $BlackL;
+      font-weight: bold;
+    }
+  }
+
+}
