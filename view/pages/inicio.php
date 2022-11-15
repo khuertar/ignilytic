@@ -58,12 +58,12 @@ CARRUSEL
 
     <a href="diseno" class="general__card destacado__diseno">
       <div class="destacados__img02"></div>
-      <h1>Diseño de páginas web</h1>
+      <h1>Diseño de aplicaciones web</h1>
     </a>
 
     <a href="ti" class="general__card destacados__ti">
       <div class="destacados__img03"></div>
-      <h1>Diseño de páginas web</h1>
+      <h1>Mantenimiento de equipo</h1>
     </a>
 
   </div>
