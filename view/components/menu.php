@@ -26,11 +26,11 @@ Nav Desktop
   <div class="escritorio__navegacion">
     <div class="escritorio_logo"><a href="inicio"><img src="view/src/img/logo.svg" alt="logo"></a></div>
     <div class="escritorio__categorias">
-      <a href="inicio"><h4>Inicio</h4></a>
-      <a href="servicios"><h4>Servicios</h4></a>
-      <a href="portafolio"><h4>Portafolio</h4></a>
-      <a href="faq"><h4>FAQ</h4></a>
-      <a href="Contacto"><h4>Contacto</h4></a>
+      <a href="inicio"><h2>Inicio</h2></a>
+      <a href="servicios"><h2>Servicios</h2></a>
+      <a href="portafolio"><h2>Portafolio</h2></a>
+      <a href="faq"><h2>FAQ</h2></a>
+      <a href="Contacto"><h2>Contacto</h2></a>
       <i class="fa-regular fa-moon modoDesk"></i>
       <a href="#" class='escritorio__btn'>Inicia Sesión</a>
     </div>
