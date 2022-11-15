@@ -14,7 +14,7 @@ CARRUSEL
   <div class="inicio__habilities">
     <div class="general__card resposnivo">
       <div class="abilities__img01"></div>
-      <h3>Diseño responsivo</h3>
+      <div class="title_card">Diseño responsivo</div>
       <p>
         Creamos páginas web que se adaptan a cualquier tamaño de pantalla logrando que tu sitio web sea accesible desde cualquier dispositivo
       </p>
@@ -22,7 +22,7 @@ CARRUSEL
 
     <div class="general__card original">
       <div class="abilities__img02"></div>
-      <h3>Diseño original</h3>
+      <div class="title_card">Diseño original</div>
       <p>
         No ocupamos plantillas, cada diseño es único y personalizado, así podemos garantizar la originalidad de tu marca
       </p>
@@ -30,7 +30,7 @@ CARRUSEL
 
     <div class="general__card pagos">
       <div class="abilities__img03"></div>
-      <h3>Pagos en linea</h3>
+      <div class="title_card">Pagos en linea</div>
       <p>
         Alcanza un mayor mercado vendiendo en internet
       </p>
@@ -38,7 +38,7 @@ CARRUSEL
 
     <div class="general__card disponibilidad">
       <div class="abilities__img04"></div>
-      <h3>Disponibilidad</h3>
+      <div class="title_card">Disponibilidad</div>
       <p>
         Aplicaciones web funcionales y estables disponibles en cualquier momento
       </p>
@@ -53,17 +53,17 @@ CARRUSEL
 
     <a href="web" class="general__card destacado__web">
       <div class="destacados__img01"></div>
-      <h2>Diseño de páginas web</h2>
+      <h1>Diseño de páginas web</h1>
     </a>
 
     <a href="diseno" class="general__card destacado__diseno">
       <div class="destacados__img02"></div>
-      <h2>Diseño de páginas web</h2>
+      <h1>Diseño de páginas web</h1>
     </a>
 
     <a href="ti" class="general__card destacados__ti">
       <div class="destacados__img03"></div>
-      <h2>Diseño de páginas web</h2>
+      <h1>Diseño de páginas web</h1>
     </a>
 
   </div>

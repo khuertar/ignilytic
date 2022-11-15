@@ -130,6 +130,16 @@
       }
     }
 
+    .title_card{
+      font-family: $text;
+      font-size: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      body.dark &{
+        color: $whiteL;
+       }
+    }
+
   }
 
   .destacados{
@@ -137,7 +147,7 @@
     grid-template-columns:repeat(1, 1fr);
     row-gap: 20px;
     font-family: $title;
-    h2{
+    h1{
       body.dark &{
         color: $whiteL;
        }
