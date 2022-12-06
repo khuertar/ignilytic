@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
   <!-- Normalize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+  <!-- Accordeon -->
+  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.css">
   <!--===============================================
   lib js
   =================================================-->  
@@ -23,6 +25,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!-- Carousel -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Accordeon -->
+  <script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
 
   <link rel="icon" href="view/src/img/icono.png" sizes="64x64">
 
@@ -48,8 +52,8 @@
         if($_GET["url"] == "inicio" ||
            $_GET["url"] == "servicios" ||
            $_GET["url"] == "web" ||
-           $_GET["url"] == "diseno"
-         
+           $_GET["url"] == "diseno" ||
+           $_GET["url"] == "faq" 
         ){
 
           include "pages/".$_GET["url"].".php";

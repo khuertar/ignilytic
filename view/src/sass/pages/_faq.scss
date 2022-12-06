@@ -1,0 +1,26 @@
+.faqs {
+  width: 90%;
+  margin: auto;
+  @include desktop {
+    width: 1150px;
+  }
+  .faqs__in {
+    margin-top: 20px;
+    .ac {
+      display: block;
+      background: $purple;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 10px 0px;
+      color: $whiteL;
+      font-size: 13px;
+      @include desktop {
+        font-size: 17px;
+      }
+
+      .ac-text {
+        text-align: left;
+      }
+    }
+  }
+}
