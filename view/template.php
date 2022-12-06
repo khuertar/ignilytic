@@ -47,7 +47,8 @@
 
         if($_GET["url"] == "inicio" ||
            $_GET["url"] == "servicios" ||
-           $_GET["url"] == "web"
+           $_GET["url"] == "web" ||
+           $_GET["url"] == "diseno"
          
         ){
 

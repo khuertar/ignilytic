@@ -1,0 +1,99 @@
+.disenos {
+  width: 90%;
+  margin: auto;
+  @include desktop {
+    width: 1150px;
+  }
+  .disenos__info {
+    margin: auto;
+    margin-top: 20px;
+    @include desktop {
+      width: 1150px;
+    }
+    body.dark & {
+      color: $whiteL;
+    }
+  }
+  .disenos__in {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    justify-content: center;
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+    }
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+      width: 1150px;
+    }
+    h3 {
+      font-family: $title;
+    }
+    p {
+      text-align: center;
+      body.dark & {
+        color: $BlackL;
+      }
+    }
+    a {
+      color: $BlackL;
+      text-decoration: none;
+    }
+    .diseno__item {
+      background-color: $orange;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 5px;
+      justify-content: center;
+    }
+    .diseno__basico {
+      height: 500px;
+    }
+  }
+}
+
+.diseno__item__notas {
+  background-color: $mainYellow;
+  margin-top: 20px;
+  p {
+    font-family: $text;
+    text-align: center;
+    font-weight: 700;
+    body.dark & {
+      color: $BlackL;
+    }
+  }
+}
+
+.diseno__extras {
+  margin: auto;
+  margin-top: 20px;
+  h3 {
+    font-family: $title;
+  }
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 20px;
+  justify-content: center;
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+    width: 1150px;
+  }
+}
+
+.diseno__item__extras {
+  background-color: $purple;
+  p {
+    font-family: $title;
+    font-size: 24px;
+    color: $BlackL;
+    padding-top: 10px;
+    font-weight: 700;
+  }
+}
