@@ -1,0 +1,91 @@
+.tis {
+  width: 90%;
+  margin: auto;
+  @include desktop {
+    width: 1150px;
+  }
+  .tis__in {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    justify-content: center;
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+    }
+    @include desktop {
+      grid-template-columns: repeat(4, 1fr);
+      width: 1150px;
+      .tis__item__orden {
+        grid-column-start: 2;
+      }
+    }
+    h3 {
+      font-family: $title;
+      body.dark & {
+        color: $whiteL;
+      }
+    }
+    p {
+      text-align: center;
+      color: $BlackL;
+      body.dark & {
+        color: $whiteL;
+      }
+    }
+    a {
+      color: $BlackL;
+      text-decoration: none;
+    }
+  }
+
+  .tis__card {
+    display: grid;
+    background-color: $mainDarkBlue;
+  }
+
+  .tis__poliza__item {
+    padding: 0px;
+    p {
+      padding-top: 5px;
+      color: $whiteL;
+      body.dark & {
+        color: $whiteL;
+      }
+    }
+  }
+
+  .tis__costo {
+    background-color: $purple;
+    margin: auto;
+    margin-top: 20px;
+    @include desktop {
+      width: 565px;
+    }
+    a {
+      color: $BlackL;
+      text-decoration: none;
+    }
+    p {
+      padding-top: 5px;
+      color: $whiteL;
+      body.dark & {
+        color: $whiteL;
+      }
+    }
+  }
+  .tis__info {
+    margin: auto;
+    margin-top: 20px;
+    @include desktop {
+      width: 1150px;
+    }
+    p {
+      color: $BlackL;
+      body.dark & {
+        color: $whiteL;
+      }
+    }
+  }
+}
