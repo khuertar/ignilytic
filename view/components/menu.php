@@ -14,7 +14,7 @@ Nav movil
     <a href="servicios"><h2>Servicios</h2></a>
     <a href="portafolio"><h2>Portafolio</h2></a>
     <a href="faq"><h2>FAQ</h2></a>
-    <a href="Contacto" ><h2>Contacto</h2></a>
+    <a href="contacto" ><h2>Contacto</h2></a>
     <a href="#" class='movil__btn'>Inicia Sesión</a>
   </div>
 </nav>
@@ -30,7 +30,7 @@ Nav Desktop
       <a href="servicios"><h2>Servicios</h2></a>
       <a href="portafolio"><h2>Portafolio</h2></a>
       <a href="faq"><h2>FAQ</h2></a>
-      <a href="Contacto"><h2>Contacto</h2></a>
+      <a href="contacto"><h2>Contacto</h2></a>
       <i class="fa-regular fa-moon modoDesk"></i>
       <a href="#" class='escritorio__btn'>Inicia Sesión</a>
     </div>

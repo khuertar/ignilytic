@@ -1,0 +1,72 @@
+.contacto {
+  width: 95%;
+  margin: auto;
+
+  @include desktop {
+    width: 1150px;
+  }
+
+  .contacto__info {
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    body.dark & {
+      color: $whiteL;
+    }
+  }
+
+  .contacto__wrapper {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 270px;
+    @include tablet {
+      margin-left: 230px;
+      width: 500px;
+    }
+    @include desktop {
+      margin-left: 275px;
+      width: 600px;
+    }
+
+    body.dark & {
+      color: $whiteL;
+      background-color: darken($color: $mainYellow, $amount: 13);
+    }
+    background-color: lighten($color: $mainYellow, $amount: 15);
+
+    .btn-danger {
+      border-radius: 5px;
+      background-color: $mainRed;
+      width: 100px;
+      padding: 5px;
+      text-align: center;
+      color: $BlackL;
+      font-family: $text;
+      transition: all 0.5s ease;
+      margin-top: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      body.dark & {
+        color: $whiteL;
+      }
+      &:hover {
+        background: darken($mainRed, 5%);
+        cursor: pointer;
+        color: $BlackL;
+      }
+    }
+  }
+  .g-recaptcha {
+    margin-top: 20px;
+  }
+
+  .mb-3 {
+    margin-top: 20px;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .recaptch__alinear {
+    text-align: center;
+  }
+}
